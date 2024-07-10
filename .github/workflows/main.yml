@@ -1,0 +1,22 @@
+name: Push Notification
+
+on: push
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js environment
+      uses: actions/setup-node@v4
+      with:
+        node-version: '14'
+
+    - name: Send push notification
+      run: |
+        echo "Code pushed by $GITHUB_ACTOR"
+        echo "Push time: $(date -u)"
+        echo "Commit message: $(git log -1 --pretty=%B)"
