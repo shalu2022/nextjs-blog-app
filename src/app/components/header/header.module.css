@@ -1,0 +1,29 @@
+.container{
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+.navList{
+    display :flex;
+    align-items: center;
+    gap: 10px;
+}
+.logout{
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(241, 83, 96);
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.logo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    
+}

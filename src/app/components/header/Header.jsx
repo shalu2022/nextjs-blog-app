@@ -1,7 +1,51 @@
+"use client"
+import Link from 'next/link'
 import React from 'react'
+import styles from './header.module.css'
+
+const navLinks = [
+  {
+    id:1,
+    name: "Home",
+    link:"/"
+  },
+  {
+    id:1,
+    name: "Contact",
+    link:"/contact"
+  },
+  {
+    id:1,
+    name: "Blog",
+    link:"/blog"
+  },
+  {
+    id:1,
+    name: "About",
+    link:"/about"
+  },
+  {
+    id:1,
+    name: "Works",
+    link:"/works"
+  }
+]
 
 export default function Header() {
+  function clickHandler(){
+    console.log("clicked")
+  }
   return (
-    <div>Header</div>
+    <div className={styles.container}>
+      <Link href="/" className={styles.logo}>SHA</Link>
+      <div className={styles.navList}>
+      {navLinks.map(item=>(
+        <Link key={item.id} className={styles.navItems} href={item.link}>{item.name}</Link>
+      ))}
+      </div>
+      <button className={styles.logout} onClick={()=>clickHandler()}>
+        Logout
+      </button>
+    </div>
   )
 }
