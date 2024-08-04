@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import React from 'react'
 import styles from './header.module.css'
+import DarkMode from '../darkMode/DarkMode'
 
 const navLinks = [
   {
@@ -42,6 +43,7 @@ export default function Header() {
       {navLinks.map(item=>(
         <Link key={item.id} className={styles.navItems} href={item.link}>{item.name}</Link>
       ))}
+      <DarkMode />
       </div>
       <button className={styles.logout} onClick={()=>clickHandler()}>
         Logout

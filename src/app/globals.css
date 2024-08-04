@@ -26,3 +26,17 @@ a{
   max-width: 1099px;
   /* border: 2px solid white ; */
 }
+
+.theme{
+  transition: 1s all ease;
+}
+
+.light{
+  background-color: white;
+  color: black;
+}
+
+.dark{
+  background-color: rgb(1, 5, 1);
+  color: grey;
+}
