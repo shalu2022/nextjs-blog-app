@@ -1,7 +1,7 @@
 .container{
     height: 20px;
     width: 42px;
-    border: 1.0px solid aqua;
+    border: 1.0px solid #28debe;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -13,9 +13,9 @@
     font-size: 12px;
 }
 .toggleCircle{
-    height: 15px;
-    width: 15px;
-    background-color: rgb(62, 227, 172);
+    height: 16px;
+    width: 16px;
+    background-color: #28debe;
     border-radius: 50%;
     position: absolute;   
     cursor: pointer;
