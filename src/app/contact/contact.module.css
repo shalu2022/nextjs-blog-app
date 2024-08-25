@@ -1,0 +1,60 @@
+.container{
+    height: 500px;
+    text-align: center;
+    /* background-color: aquamarine; */
+    gap: 20px;
+    background-color: rgba(128, 128, 128, 0.171);
+    padding: 30px;
+    border-radius: 10px;
+}
+.mainHeading{
+    font-size: 40px;
+    background: linear-gradient(to right, #28debe, #333);
+    background-clip: text;
+    color: transparent;
+}
+.innerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rebeccapurple; */
+    height: 100%;
+
+}
+.img{
+    object-fit: contain;
+    animation: zoom 3s infinite ease alternate
+}
+@keyframes zoom {
+    from {
+        transform: translateY(-15px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+.imageContainer{
+    flex:1
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    gap:10px;}
+.input, .textarea{
+    border:none;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid grey;
+    color: white;
+}
+.button{
+    width: 50%;
+    margin-left: 50%;
+    background-color: #28debe;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
