@@ -8,8 +8,8 @@
     border-radius: 10px;
 }
 .mainHeading{
-    font-size: 40px;
-    background: linear-gradient(to right, #28debe, #333);
+    font-size: 60px;
+    background: linear-gradient(#28debe, #333);
     background-clip: text;
     color: transparent;
 }

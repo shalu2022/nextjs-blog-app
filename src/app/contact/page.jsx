@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import style from './contact.module.css'
 import Image from 'next/image'
@@ -8,7 +9,7 @@ function Contact() {
       <h1 className={style.mainHeading}>Contact Us</h1>
       <div className={style.innerContainer}>
         <div className={style.imageContainer}>
-          <Image className={style.img} width={500} height={400} src="/contact_us.png"/>
+          <Image alt = "contact-us image" className={style.img} width={500} height={400} src="/contact_us.png"/>
         </div>
         <div className={style.form}>
           <input className={style.input} type='text' placeholder='First Name'/>
