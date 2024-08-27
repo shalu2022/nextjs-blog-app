@@ -40,8 +40,8 @@ export default function Header() {
     <div className={styles.container}>
       <Link href="/" className={styles.logo}>SHA</Link>
       <div className={styles.navList}>
-      {navLinks.map(item=>(
-        <Link key={item.id} className={styles.navItems} href={item.link}>{item.name}</Link>
+      {navLinks.map((item, index)=>(
+        <Link key={index} className={styles.navItems} href={item.link}>{item.name}</Link>
       ))}
       <DarkMode />
       </div>

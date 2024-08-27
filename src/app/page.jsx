@@ -10,7 +10,7 @@ export default function Home() {
         <button className={styles.button}>Read More</button>
       </div>
       <div className={styles.text}>
-        <Image src="/home.png" className={styles.img} width={500} height={400}/>
+        <Image priority={true} alt="home-page image" src="/home.png" className={styles.img} width={500} height={400}/>
       </div>
     </div>
   );
