@@ -1,0 +1,50 @@
+.container{
+    /* overflow: scroll; */
+    /* background-color: #e153e6 !important; */
+}
+.card{
+    display: flex;
+    gap: 20px;
+    background-color: rgba(128, 128, 128, 0.171);
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 400px;
+    margin-top: 30px;
+}
+.layoutHeading{
+  font-size: 60px;
+  background: linear-gradient(#28debe, #333);
+  background-clip: text;
+  color: transparent;
+}
+.layoutContainer{
+    /* margin-top: 50px; */
+    height: 80%;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.heading{
+    font-size: 50px;
+}
+.left{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right{
+    flex:1;
+}
+.para{
+    line-height: 25px;
+}
+.button{
+    background-color: #28debe;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 10px;
+    width: 200px;
+    color: white;
+    cursor: pointer;
+  }
