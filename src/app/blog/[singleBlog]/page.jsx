@@ -5,6 +5,7 @@ import Image from 'next/image'
 function SingleBlog() {
   return (
     <div className={style.container}>
+      <h1 className={style.heading}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deb, eatisa jolkes.</h1>
       <div className={style.upperDiv}>
         <Image className={style.image} src='/dummy-image.png' width={500} height={300} />
       </div>
