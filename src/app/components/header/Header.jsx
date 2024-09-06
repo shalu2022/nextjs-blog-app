@@ -37,10 +37,10 @@ export default function Header() {
   }
   return (
     <div className={styles.container}>
-      <Link as="image" rel='preload' href="/" className={styles.logo}>SHA</Link>
+      <Link href="/" className={styles.logo}>BLOG US</Link>
       <div className={styles.navList}>
       {navLinks.map((item, index)=>(
-        <Link rel='preload' key={index} className={styles.navItems} href={item.link}>{item.name}</Link>
+        <Link key={index} className={styles.navItems} href={item.link}>{item.name}</Link>
       ))}
       <DarkMode />
       </div>

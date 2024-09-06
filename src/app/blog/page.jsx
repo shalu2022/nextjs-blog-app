@@ -1,8 +1,10 @@
 import React from 'react'
 import style from './page.module.css'
 import Image from 'next/image'
-import { notFound } from 'next/navigation'
-import { NextResponse } from 'next/server'
+export const metadata = {
+    title: "blog",
+    description: "Blog Details",
+  }; 
 async function getData(){
     let res = await fetch('http://localhost:3000/api/posts', { cache: 'no-store'})
     if(!res.ok){
@@ -22,7 +24,7 @@ async function Blog() {
                           <h1 className={style.heading}>{item.title}</h1>
                           <p className={style.para}>{item.desc}</p>
                           {/* <p className={style.para}>{item.body}</p> */}
-                          <button className={style.button}><a href={`/blog/${item._id}`} >Click Here</a></button>
+                          <a href={`/blog/${item._id}`} ><button className={style.button}>Click Here</button></a>
                       </div>
                       <div className={style.right}>
                           <Image className={style.img} alt="blog image" width= {420} height= {240} src={item.image}/>
