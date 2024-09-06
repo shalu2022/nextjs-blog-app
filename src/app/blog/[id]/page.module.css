@@ -17,4 +17,8 @@
 }
 .heading{
     margin-bottom: 10px;
+    font-size: 50px;
+    background: linear-gradient(#28debe, #333);
+    background-clip: text;
+    color: transparent;
 }

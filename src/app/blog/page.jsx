@@ -4,8 +4,7 @@ import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { NextResponse } from 'next/server'
 async function getData(){
-    let res = await fetch('http://localhost:3000/api/posts' )
-    // let res = await fetch('http://localhost:3000/api/posts', { cache: 'no-store'})
+    let res = await fetch('http://localhost:3000/api/posts', { cache: 'no-store'})
     if(!res.ok){
        return new Error("Not Found")
     }
