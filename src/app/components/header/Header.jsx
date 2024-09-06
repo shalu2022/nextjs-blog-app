@@ -34,14 +34,13 @@ const navLinks = [
 
 export default function Header() {
   function clickHandler(){
-    console.log("clicked")
   }
   return (
     <div className={styles.container}>
-      <Link href="/" className={styles.logo}>SHA</Link>
+      <Link as="image" rel='preload' href="/" className={styles.logo}>SHA</Link>
       <div className={styles.navList}>
       {navLinks.map((item, index)=>(
-        <Link key={index} className={styles.navItems} href={item.link}>{item.name}</Link>
+        <Link rel='preload' key={index} className={styles.navItems} href={item.link}>{item.name}</Link>
       ))}
       <DarkMode />
       </div>

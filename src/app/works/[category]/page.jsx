@@ -1,6 +1,5 @@
 import React from 'react'
 import style from './page.module.css'
-import { Content } from 'next/font/google'
 
 export default function Caterogry({params}){
     return(

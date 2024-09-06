@@ -23,3 +23,6 @@ const postSchema = new Schema({
         required: true
     }
 }, {timestamps: true})
+
+// if post collection is not there, create new one
+export default mongoose.models.Post || mongoose.model("Post", postSchema);
