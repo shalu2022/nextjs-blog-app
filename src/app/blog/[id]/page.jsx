@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { notFound } from 'next/navigation'
 
 async function getData(id){
-  let res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, { cache: 'no-store'})
+  let res = await fetch(`http://localhost:3000/api/posts/${id}`, { cache: 'no-store'})
   if(!res.ok){
       return notFound()
   }
@@ -17,10 +17,11 @@ async function SingleBlog({params}) {
     <div className={style.container}>
       <h1 className={style.heading}>{data.title}</h1>
       <div className={style.upperDiv}>
-        <Image className={style.image} src='/dummy-image.png' width={500} height={300} />
+        <Image className={style.image} src={data.image} width={500} height={300} />
       </div>
       <div className={style.bottomDiv}>
-        <p>{data.body}</p>
+      <p>{data.desc}</p>
+      <p>{data.body}</p>
       </div>
     </div>
   )
