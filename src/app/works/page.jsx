@@ -34,7 +34,7 @@ export default function Work(){
                             <button className={style.button}><a href={`/works/${item.path}`}>Click Here</a></button>
                         </div>
                         <div className={style.right}>
-                            <Image width= {500}
+                            <Image alt="image" width= {500}
     height= {340} src={item.url}/>
                         </div>
                    </div>
